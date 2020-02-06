@@ -23,15 +23,15 @@ public class TestMain {
   @Test
   public void assertIntTest() {
     Parent1 parent1 = new Parent1();
-    int x = parent1.foo();
-    assertEquals(x, 50);
+    int x = parent1.foobar();
+    assertEquals(x, 80);
   }
 
   @Test
   public void assertValTest() {
     Child1 child1 = new Child1();
     int y = child1.bar();
-    assertEquals(y, 25);
+    assertEquals(y, 40);
   }
 
 
