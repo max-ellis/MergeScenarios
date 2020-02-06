@@ -16,13 +16,14 @@ public class Main {
 class Parent1 {
 
   public int x = 5;
-  public int y = 10;
+  public int y = 8;
   public int foo() {
     where();
     return x*y;
   }
 
   public void where() {
+    System.out.println("Over");
     System.out.println("Here");
   }
 
