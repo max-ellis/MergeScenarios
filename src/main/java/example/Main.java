@@ -16,7 +16,7 @@ public class Main {
 class Parent1 {
 
   public int x = 5;
-  public int y = 15;
+  public int y = 10;
   public int foo() {
     where();
     return x*y;
