@@ -23,7 +23,6 @@ class Parent1 {
   }
 
   public void where() {
-    System.out.println("There");
     System.out.println("Here");
   }
 
