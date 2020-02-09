@@ -33,6 +33,7 @@ class Parent1 {
 class Child1 extends Parent1 {
 
   public int bar() {
+    System.out.println("bar");
     return x*y/2;
   }
 }
