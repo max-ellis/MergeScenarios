@@ -18,11 +18,11 @@ class Parent1 {
   public int x = 5;
   public int y = 8;
   public int foo() {
-    where();
+    overThere();
     return x*y;
   }
 
-  public void where() {
+  public void overThere() {
     System.out.println("Over");
     System.out.println("Here");
     System.out.println("foo");
