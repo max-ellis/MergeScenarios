@@ -32,7 +32,6 @@ class Parent1 {
 class Child1 extends Parent1 {
 
   public int bar() {
-    where();
     return x*y/2;
   }
 }
