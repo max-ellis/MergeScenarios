@@ -34,7 +34,9 @@ class Child1 extends Parent1 {
 
   public int bar() {
     where();
+    x = x - 1;
     System.out.println("bar");
+    x = x + 1;
     return x*y/2;
   }
 }
