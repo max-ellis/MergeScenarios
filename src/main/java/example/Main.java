@@ -25,6 +25,7 @@ class Parent1 {
   public void where() {
     System.out.println("Over");
     System.out.println("Here");
+    System.out.println("foo");
   }
 
 }
@@ -32,7 +33,6 @@ class Parent1 {
 class Child1 extends Parent1 {
 
   public int bar() {
-    where();
     return x*y/2;
   }
 }
