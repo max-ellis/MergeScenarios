@@ -16,7 +16,7 @@ class Parent1 {
   public int x = 5;
   public int y = 8;
 
-  public int bar() {
+  public int barNew() {
     System.out.println("bar");
     return x*y/2;
   }
@@ -26,7 +26,7 @@ class Child1 extends Parent1 {
 
 
   public int foo() {
-    int z = bar();
+    int z = barNew();
     return x*y;
   }
 }
@@ -38,7 +38,7 @@ class Child2 extends Child1 {
   }
 
   public int fooBar() {
-    return bar() * foo();
+    return barNew() * foo();
   }
 
 }

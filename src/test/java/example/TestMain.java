@@ -30,7 +30,7 @@ public class TestMain {
   @Test
   public void assertValTest() {
     Child1 child1 = new Child1();
-    int y = child1.bar();
+    int y = child1.barNew();
     assertEquals(y, 20);
   }
 
