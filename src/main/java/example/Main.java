@@ -28,8 +28,13 @@ class Parent1 {
 
 class Child1 extends Parent1 {
 
-  public int fooBar() {
+  public int barFoo() {
     return barNew() * foo();
+  }
+
+  public int fooBar() {
+    int z = barNew();
+    return x*y;
   }
 
 }
@@ -37,9 +42,13 @@ class Child1 extends Parent1 {
 class Child2 extends Child1 {
   
   void get() {
-    int x = foo();
+    int x = fooBar();
+    int y = barNew();
   }
-
+  
+  public int barNew() {
+    return 10;
+  }
 
 }
 
