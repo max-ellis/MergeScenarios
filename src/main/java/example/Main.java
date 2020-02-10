@@ -6,8 +6,8 @@ public class Main {
     public static void main(String args[]){
       Parent1 parent = new Parent1();
       Child1 child = new Child1();
-      int x = parent.foobar();
-      int y = child.barNew();
+      int x = child.foobar();
+      int y = parent.barNew();
     }
 
 }
@@ -17,9 +17,13 @@ class Parent1 {
 
   public int x = 5;
   public int y = 8;
-  public int foobar() {
+
+  public int barNew() {
     where();
-    return x*y;
+    x = x - 1;
+    System.out.println("bar");
+    x = x + 1;
+    return x*y/2;
   }
 
   public void where() {
@@ -32,12 +36,9 @@ class Parent1 {
 
 class Child1 extends Parent1 {
 
-  public int barNew() {
+  public int foobar() {
     where();
-    x = x - 1;
-    System.out.println("bar");
-    x = x + 1;
-    return x*y/2;
+    return x*y;
   }
 }
 
