@@ -25,7 +25,7 @@ class Parent1 {
 class Child1 extends Parent1 {
 
 
-  public int foo() {
+  public int fooBar() {
     int z = bar();
     return x*y;
   }
@@ -34,7 +34,7 @@ class Child1 extends Parent1 {
 class Child2 extends Child1 {
   
   void get() {
-    int x = foo();
+    int x = fooBar();
   }
 
 

@@ -23,7 +23,7 @@ public class TestMain {
   @Test
   public void assertIntTest() {
     Child1 parent1 = new Child1();
-    int x = parent1.foo();
+    int x = parent1.fooBar();
     assertEquals(x, 40);
   }
 
