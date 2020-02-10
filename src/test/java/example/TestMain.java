@@ -22,18 +22,18 @@ public class TestMain {
 
   @Test
   public void assertIntTest() {
-    Child1 parent1 = new Child1();
-    int x = parent1.fooBar();
-    assertEquals(x, 40);
+    A a = new A();
+    int x = a.foo();
+    assertEquals(x, 20);
   }
 
-  @Test
+/*  @Test
   public void assertValTest() {
     Child1 child1 = new Child1();
     int y = child1.barNew();
     assertEquals(y, 20);
   }
-
+*/
 
 
   @After
