@@ -7,7 +7,7 @@ public class Main {
       Parent1 parent = new Parent1();
       Child1 child = new Child1();
       int x = parent.foobar();
-      int y = child.bar();
+      int y = child.barNew();
     }
 
 }
@@ -32,7 +32,7 @@ class Parent1 {
 
 class Child1 extends Parent1 {
 
-  public int bar() {
+  public int barNew() {
     where();
     x = x - 1;
     System.out.println("bar");
