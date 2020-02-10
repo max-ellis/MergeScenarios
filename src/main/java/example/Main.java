@@ -35,8 +35,12 @@ class Child2 extends Child1 {
   
   void get() {
     int x = fooBar();
+    int y = barNew();
   }
-
+  
+  public int barNew() {
+    return 10;
+  }
 
 }
 
