@@ -29,7 +29,7 @@ public class TestMain {
 
   @Test
   public void assertValTest() {
-    Parent1 child1 = new Parent1();
+    Child1 child1 = new Child1();
     int y = child1.bar();
     assertEquals(y, 20);
   }
