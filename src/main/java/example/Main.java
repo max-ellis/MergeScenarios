@@ -16,14 +16,14 @@ class Parent1 {
   public int x = 5;
   public int y = 8;
 
-  public int bar() {
-    System.out.println("bar");
-    return x*y/2;
-  }
 }
 
 class Child1 extends Parent1 {
 
+  public int bar() {
+    System.out.println("bar");
+    return x*y/2;
+  }
 
   public int fooBar() {
     int z = bar();
