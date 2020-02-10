@@ -37,6 +37,9 @@ class Child2 extends Child1 {
     int x = foo();
   }
 
+  public int fooBar() {
+    return bar() * foo();
+  }
 
 }
 
