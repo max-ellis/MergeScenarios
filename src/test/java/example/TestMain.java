@@ -22,8 +22,8 @@ public class TestMain {
 
   @Test
   public void assertIntTest() {
-    A a = new A();
-    int x = a.fooBar();
+    B b = new B();
+    int x = b.fooBar();
     assertEquals(x, 20);
   }
 

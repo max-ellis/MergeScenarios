@@ -11,20 +11,21 @@ public class Main {
 
 class A {
   void get() {
-    int x = fooBar();
+    B b = new B();
+    int x = b.fooBar();
     int y = 2;
     int z = x*y;
   }
 
-  int fooBar() {
-    int x = 20;
-    return 20;
-  }
 }
 
 class B {
   void bar() {
     System.out.println("foo");
     System.out.println("bar");
+  }
+  int fooBar() {
+    int x = 20;
+    return 20;
   }
 }
