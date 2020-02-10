@@ -18,7 +18,7 @@ class A {
 }
 
 class B {
-  void bar() {
+  void bar2() {
     System.out.println("foo");
     System.out.println("bar");
   }
