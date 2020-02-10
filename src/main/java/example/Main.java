@@ -4,10 +4,8 @@ package example;
 public class Main {
 
     public static void main(String args[]){
-      Parent1 parent = new Parent1();
-      Child1 child = new Child1();
-      int y = child.barNew();
-      int x = child.foo();
+      Child2 child = new Child2();
+      child.get();
     }
 
 }
@@ -18,28 +16,28 @@ class Parent1 {
   public int x = 5;
   public int y = 8;
 
-  public void where() {
-    System.out.println("Over");
-    System.out.println("Here");
-    System.out.println("foo");
+  public int bar() {
+    System.out.println("bar");
+    return x*y/2;
   }
-
 }
 
 class Child1 extends Parent1 {
 
-  public int barNew() {
-    where();
-    System.out.println("bar");
-    return x*y/2;
-  }
 
   public int foo() {
-    where();
+    int z = bar();
     return x*y;
   }
 }
 
+class Child2 extends Child1 {
+  
+  void get() {
+    int x = foo();
+  }
 
+
+}
 
 
