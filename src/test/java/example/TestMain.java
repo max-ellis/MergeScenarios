@@ -23,7 +23,7 @@ public class TestMain {
   @Test
   public void assertIntTest() {
     A a = new A();
-    int x = a.foo();
+    int x = a.fooBar();
     assertEquals(x, 20);
   }
 

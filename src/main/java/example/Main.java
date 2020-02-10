@@ -11,12 +11,12 @@ public class Main {
 
 class A {
   void get() {
-    int x = foo();
+    int x = fooBar();
     int y = 2;
     int z = x*y;
   }
 
-  int foo() {
+  int fooBar() {
     int x = 20;
     return 20;
   }
