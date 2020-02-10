@@ -7,7 +7,7 @@ public class Main {
       Parent1 parent = new Parent1();
       Child1 child = new Child1();
       int x = parent.foobar();
-      int y = parent.bar();
+      int y = child.bar();
     }
 
 }
@@ -22,13 +22,6 @@ class Parent1 {
     return x*y;
   }
 
-  public int bar() {
-    where();
-    x = x - 1;
-    System.out.println("bar");
-    x = x + 1;
-    return x*y/2;
-  }
   public void where() {
     System.out.println("Over");
     System.out.println("Here");
@@ -39,6 +32,13 @@ class Parent1 {
 
 class Child1 extends Parent1 {
 
+  public int bar() {
+    where();
+    x = x - 1;
+    System.out.println("bar");
+    x = x + 1;
+    return x*y/2;
+  }
 }
 
 
