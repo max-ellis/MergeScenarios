@@ -14,7 +14,7 @@ import java.io.PrintStream;
 public class TestMain {
   private final ByteArrayOutputStream content = new ByteArrayOutputStream();
   private final PrintStream originalOut = System.out;
-
+/*
   @Before
   public void setUpStream() {
     System.setOut(new PrintStream(content));
@@ -27,18 +27,17 @@ public class TestMain {
     assertEquals(x, 20);
   }
 
-/*  @Test
+ @Test
   public void assertValTest() {
     Child1 child1 = new Child1();
     int y = child1.barNew();
     assertEquals(y, 20);
   }
-*/
 
 
   @After
   public void restoreStream() {
     System.setOut(originalOut);
   }
-
+*/
 }

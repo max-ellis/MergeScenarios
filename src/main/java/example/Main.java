@@ -7,26 +7,11 @@ public class Main {
 
     }
 
-}
+	public void method() {
+		int a = 1;
+		int b = 2;
+		int c = a + b;
+		int d = b + c;
+	}
 
-class A {
-
-}
-
-class B {
-  void bar2() {
-    System.out.println("foo");
-    System.out.println("bar");
-  }
-  int fooBar() {
-    int x = 20;
-    return 20;
-  }
-
-
-  void get() {
-    int x = fooBar();
-    int y = 2;
-    int z = x*y;
-  }
 }
