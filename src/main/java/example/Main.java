@@ -10,8 +10,13 @@ public class Main {
 	public void method() {
 		int a = 2;
 		int b = 2;
-		int c = a + b;
-		int d = b + c;
+		int c = add(a, b);
+		int d = add(b, c);
+	}
+
+	public int add(int x, int y) {
+		return x + y;
+
 	}
 
 }
