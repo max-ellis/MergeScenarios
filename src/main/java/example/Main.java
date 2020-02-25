@@ -11,7 +11,7 @@ public class Main {
 		int a = 1;
 		int b = 2;
 		int c = add(a, b);
-		int d = b + c;
+		int d = add(b, c);
 	}
 
 	public int add(int x, int y) {
